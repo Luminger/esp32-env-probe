@@ -1,0 +1,16 @@
+menu BME280
+
+config BME280_FLOAT_ENABLE
+    bool "Enable float values"
+    default y
+    help
+        The BME280 driver can either report values back as integers or as
+        float values.
+
+config BME280_64BIT_ENABLE
+    bool "Enable 64bit values"
+    default y
+    help
+        The BME200 driver can return 64bit or 32bit values.
+
+endmenu
